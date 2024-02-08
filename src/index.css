@@ -125,6 +125,7 @@ img {
 .white-background {
     background-color: rgb(255, 254, 253);
     color: rgb(31, 33, 34);
+    background-image: url(https://phenomenonstudio.com/wp-content/webp-express/webp-images/themes/phenomenon/img/bg.png.webp);
 }
 
 .black-gradient {

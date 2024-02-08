@@ -48,7 +48,7 @@ const App = () => {
             <StarsCanvas />
           </div>
           <div className="mx-5 lg:mt-[-170px] mt-10">
-            <video controls width="100%" autoplay>
+            <video controls width="100%" muted="" loop=""  autoplay="" preload="none">
               <source src="/heroVideo.mp4" type="video/mp4"  />
               {/* Add additional <source> elements for different video formats */}
             </video>
@@ -139,10 +139,10 @@ const App = () => {
 
           {/* <Hero /> */}
         </div>
-        <About />
+        {/* <About />
         <Experience />
         <Tech />
-        <Works />
+        <Works /> */}
         {/* <Feedbacks /> */}
         {/* <div className='relative z-0'>
           <Contact />
