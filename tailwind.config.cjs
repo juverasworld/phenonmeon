@@ -15,6 +15,7 @@ module.exports = {
       fontFamily: {
         sans: ['Work Sans', 'sans-serif'],
         inter: ['inter', 'sans-serif'],
+        syne: ['Syne', 'sans-serif'],
       },
       boxShadow: {
         card: "0px 35px 120px -15px rgba(33, 30, 53, 0.5)",

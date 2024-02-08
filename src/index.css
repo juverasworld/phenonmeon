@@ -3,6 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -12,28 +13,81 @@
   font-weight: normal;
   font-style: normal;
   font-weight: 400;
+  src: url('/font/Syne-Regular.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 400;
   src: url('/font/WorkSans-Regular.ttf') format('ttf');
 }
+.viewed.fadein {
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  -webkit-backface-visibility: hidden;
+}
 
+
+.black-background {
+    background-color: rgb(31, 33, 34);
+    color: rgb(255, 254, 253);
+    background-position: center center;
+    /* font-family:; */
+}
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  src: local('Inter Regular'), local('Inter-Regular'), url('/font//inter/Inter-Regular.ttf') format('ttf');
+  src: local('Inter Regular'), local('Inter-Regular'), url('/font/inter/Inter-Regular.ttf') format('ttf');
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Syne", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
 }
-
+arrow-btn span::after, .arrow-btn span::before{
+  content: "";
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../img/right-arrow.svg) center center / contain no-repeat;
+  transition: all 0.8s ease 0s;
+}
+.arrow-btn span {
+  display: inline-flex;
+  width: 31px;
+  height: 31px;
+  position: relative;
+  margin-right: 5px;
+  border-radius: 50%;
+  background: rgb(255, 254, 253);
+  overflow: hidden;
+  transition: all 0.3s ease 0s;}
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
   display: block;
+}
+.img {
+  transform: scale(1);
+  transition: 0.3s transform;
+  height: auto;
+}
+
+
+.white-background {
+    background-color: rgb(255, 254, 253);
+    color: rgb(31, 33, 34);
 }
 
 .black-gradient {
