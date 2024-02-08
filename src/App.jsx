@@ -1,4 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
+import { useState, useEffect } from "react";
 import { styles } from "./styles";
 import {
   About,
@@ -13,9 +14,33 @@ import {
 } from "./components";
 
 const App = () => {
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const updateCursorPosition = (event) => {
+      setCursorPosition({ x: event.clientX, y: event.clientY });
+    };
+
+    document.addEventListener('mousemove', updateCursorPosition);
+
+    return () => {
+      document.removeEventListener('mousemove', updateCursorPosition);
+    };
+  }, []);
+  
+  // const cursorVariants = {
+  //   default: {
+  //     x: cursorPosition.x - 16,
+  //     y: cursorPosition.y - 16,
+  //   },
+  //   text: {
+  //     height: 1
   return (
     <BrowserRouter>
       <div className="relative z-0 black-gradient">
+     {/* Your app content */}
+     <div className="custom-cursor" style={{ left: cursorPosition.x, top: cursorPosition.y }}></div>
+  
         <div className="bg-cover bg-no-repeat bg-center">
           <Navbar />
           <div className="relative z-0">
@@ -56,7 +81,7 @@ const App = () => {
 
             <div className="flex items-center justify-center lg:flex-row flex-col my-16 ">
               <div className="px-5">
-                <div>
+                <div className="image-container">
                   <img className="img" src="/imgA.webp" alt="" /></div>
                   <div className="flex items-center justify-between my-3">
 
@@ -69,7 +94,7 @@ const App = () => {
                   </div>
               </div>
               <div className="px-5 lg:mt-[-6%] mt-2">
-                <div>
+              <div className="image-container">
                   <img className="img hover:-translate-y-1 hover:scale-100 duration-300 leading-[28px] py-6 px-8 rounded-xl" src="/imgB.webp" alt="" /></div>
                   <div className="flex items-center justify-between my-3">
 
@@ -84,8 +109,8 @@ const App = () => {
             </div>
             <div className="flex items-center justify-center lg:flex-row flex-col my-16 ">
               <div className="px-5">
-                <div>
-                  <img className="img" src="/imgA.webp" alt="" /></div>
+              <div className="image-container">
+                  <img className="img" src="/imgC.webp" alt="" /></div>
                   <div className="flex items-center justify-between my-3">
 
                   <p className="text-[28px] leading-7 font-bold">Rapida- Branding for <br className="md:flex hidden" /> personal homes</p>
@@ -97,8 +122,8 @@ const App = () => {
                   </div>
               </div>
               <div className="px-5 lg:mt-[-6%] mt-2">
-                <div>
-                  <img className="img" src="/imgB.webp" alt="" /></div>
+              <div className="image-container">
+                  <img className="img" src="/imgD.webp" alt="" /></div>
                   <div className="flex items-center justify-between my-3">
 
                   <p className="text-[28px] leading-7 font-bold">Rapida- Branding for <br className="md:flex hidden" /> personal homes</p>
