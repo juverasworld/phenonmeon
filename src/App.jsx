@@ -286,48 +286,86 @@ const App = () => {
             </div>
           </div>
 
-          <div className=" ">
-            <div className="black-gradientss flex items-center justify-center lg:flex-row flex-col-reverse">
-              <div className="lg:w-2/6 w-full">
+          <div className=" relative  ">
+            <div className="black-gradientss flex items-center justify-end lg:flex-row flex-col-reverse relative">
+              <div className="lg:w-2/6 absolute left-0 bottom-0 w-full">
                 <img src="/illustration.webp" alt="" className="" />
               </div>
 
-              <div className=" flex items-center justify-center lg:flex-row flex-col">
-                <div className="">
-                <div className="">
-                  <p className="lg:text-[56px] text-[30px] leading-[45px] lg:leading-[84px]">$16M+</p>
-                  <p className="text-[18px] leading-[27px]">
-                    Over $16m in investments raised by our clients
-                  </p>
-                </div>
+              <div className=" lg:w-[60.666667%;] mx-0 lg:mx-5">
+               <div className=" flex py-16 border-b-[0.5px]  border-zinc-800 items-center justify-end lg:flex-row flex-col">
 
                 <div className="">
-                <p className="lg:text-[56px] text-[30px] leading-[45px] lg:leading-[84px]">4.9</p>
-                <p className="text-[18px] leading-[27px]">
-                    Average rating of Studio clients’ apps on the App Store
-                  </p>
-                </div>   
+                  <div className="">
+                    <p className="lg:text-[56px] text-[30px] leading-[45px] lg:leading-[84px]">
+                      $16M+
+                    </p>
+                    <p className="text-[18px] leading-[27px]">
+                      Over $16m in investments raised by our clients
+                    </p>
+                  </div>
+
+                  <div className="">
+                    <p className="lg:text-[56px] text-[30px] leading-[45px] lg:leading-[84px]">
+                      4.9
+                    </p>
+                    <p className="text-[18px] leading-[27px]">
+                      Average rating of Studio clients’ apps on the App Store
+                    </p>
+                  </div>
                 </div>
-               <div className="">
                 <div className="">
-                <p className="lg:text-[56px] text-[30px] leading-[45px] lg:leading-[84px]">15.3</p>
-                <p className="text-[18px] leading-[27px]">
-                    Hours/month one specialist allocates to studying new trends
-                    and technologies. Proved by our Hubstaff analytics :)
-                  </p>
-                </div>
-              
-                <div className="">
-                <p className="lg:text-[56px] text-[30px] leading-[45px] lg:leading-[84px]">5.0</p>
-                <p className="text-[18px] leading-[27px]">
-                    Rating on the most reputable review platform, Clutch
-                  </p>
+                  <div className="">
+                    <p className="lg:text-[56px] text-[30px] leading-[45px] lg:leading-[84px]">
+                      15.3
+                    </p>
+                    <p className="text-[18px] leading-[27px]">
+                      Hours/month one specialist allocates to studying new
+                      trends and technologies. Proved by our Hubstaff analytics
+                      :)
+                    </p>
+                  </div>
+
+                  <div className="">
+                    <p className="lg:text-[56px] text-[30px] leading-[45px] lg:leading-[84px]">
+                      5.0
+                    </p>
+                    <p className="text-[18px] leading-[27px]">
+                      Rating on the most reputable review platform, Clutch
+                    </p>
+                  </div>
                 </div>
                </div>
 
-                
-
+                <div className="py-10">
+                  <div className="my-16">
+                    <p className="text-[24px] font-bold leading-[27px] py-2">
+                      Proud to be partnering with ...
+                    </p>
+                  <div className="flex items-center justify-evenly ">
+                    <p><img src="/agency.svg" alt="" className="w-32" /></p>
+                    <p><img src="/good.webp" alt="" className="w-32" /></p>
+                    <p><img src="/topdev.webp" alt="" className="w-32" /></p>
+                    <p><img src="/webflow.svg" alt="" className="w-32" /></p>
+                  </div>
+                  </div>
+                </div>
               </div>
+            </div>
+          </div>
+          <div className="">
+            <div className="orange-background">
+            <div className=" flex lg:flex-row flex-col py-24 px-6 mt-32">
+              <div className="basis-2/6">
+                <p className="">Home - Photo 3</p>
+              </div>
+              <div className="basis-4/6 border-b-[1px] pb-5">
+                <h1 className="text-[#fff] font-black  font-syne lg:text-[50px] sm:text-[30px] xs:text-[20px] text-[40px] lg:leading-[40px] mt-2">
+                  We are inspired to reach even greater heights when our clients
+                  share project results with us.
+                </h1>
+              </div>
+            </div>
             </div>
           </div>
           {/* <Hero /> */}

@@ -127,6 +127,11 @@ img {
     color: rgb(31, 33, 34);
     background-image: url(https://phenomenonstudio.com/wp-content/webp-express/webp-images/themes/phenomenon/img/bg.png.webp);
 }
+.orange-background {
+    background-color: #F2751A;
+    color: rgb(31, 33, 34);
+    background-image: url(https://phenomenonstudio.com/wp-content/webp-express/webp-images/themes/phenomenon/img/bg.png.webp);
+}
 
 .textslide.viewed {
   animation-name: textslide;
