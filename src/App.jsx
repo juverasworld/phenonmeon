@@ -292,7 +292,7 @@ const App = () => {
                 <img src="/illustration.webp" alt="" className="" />
               </div>
 
-              <div className="">
+              <div className=" flex items-center justify-center lg:flex-row flex-col">
                 <div className="">
                 <div className="">
                   <p className="lg:text-[56px] text-[30px] leading-[45px] lg:leading-[84px]">$16M+</p>
