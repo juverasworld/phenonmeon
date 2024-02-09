@@ -385,12 +385,12 @@ const App = () => {
                   </div>
                 </div>
               </div>
-              <div className="lg:text-[79px] flex items-center justify-center text-center font-bold text-[37px] leading-[35px] lg:leading-[70px]">
+              <div data-aos="fade-up" className="lg:text-[79px] flex items-center justify-center text-center font-bold text-[37px] leading-[35px] lg:leading-[70px]">
                 Web app Website Mobile app Motion design Branding 2D/3D
                 Illustration Development
               </div>
 
-              <div className="py-16 items-center flex justify-center text-slide ">
+              <div className="py-16 items-center flex justify-center text-slide animate-pulse">
                 <a href="" className="circle-btn black">
                   <span className="flex items-center hover-effect border-[0.5px] border-black bg-[#f2751a] justify-center h-[180px] w-[180px] rounded-full">
                     <svg
