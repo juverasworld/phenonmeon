@@ -245,70 +245,95 @@ const App = () => {
                 </video>
               </div>
               <div className="text-black basis-4/6">
-              <h1 className="styles.heroHeadText text-black font-black  font-syne lg:text-[60px] sm:text-[40px] xs:text-[50px] text-[40px] lg:leading-[80px] mt-2">
+                <h1 className="styles.heroHeadText text-black font-black  font-syne lg:text-[60px] sm:text-[40px] xs:text-[50px] text-[40px] lg:leading-[80px] mt-2">
                   We support you in achieving your business goals by solving the
-                problems your users face. We analyze projects from a fresh
-                perspective.
+                  problems your users face. We analyze projects from a fresh
+                  perspective.
                 </h1>
                 <p className="my-2">
-
-                 Our experts in analytics, marketing, design, and <br className="" />
-                development will give you a 360-degree view of your challenges.
+                  Our experts in analytics, marketing, design, and{" "}
+                  <br className="" />
+                  development will give you a 360-degree view of your
+                  challenges.
                 </p>
               </div>
             </div>
           </div>
           <div className="black-gradient">
-          <div className=" flex lg:flex-row flex-col py-24 px-6 mt-32">
+            <div className=" flex lg:flex-row flex-col py-24 px-6 mt-32">
               <div className="basis-2/6">
                 <p className="">Selected Cases</p>
               </div>
               <div className="basis-4/6 ">
                 <h1 className={`${styles.heroHeadTexts} `}>
-                  Full service studio for both startups and established
-                  businesses
+                  Phenomenon in facts and figures
                 </h1>
               </div>
-              {/* <div className="basis-2/6">
-
-              <p className="">Selected Cases</p>
-              </div>
-              <div className="basis-4/6">
-              <h1 className={`${styles.heroHeadText} text-white`}>
-                  Full service studio for both startups and established
-                  businesses
-                </h1> */}
-              {/* </div> */}
             </div>
           </div>
           <div className="black-gradients h-[500px] "></div>
           <div className="black-gradient">
-          <div className=" flex lg:flex-row flex-col py-24 px-6 mt-32">
+            <div className=" flex lg:flex-row flex-col py-24 px-6 mt-32">
               <div className="basis-2/6">
-                <p className="">Selected Cases</p>
+                <p className="">Home - Photo 3</p>
               </div>
               <div className="basis-4/6 border-b-[1px] pb-5">
-                <h1 className="text-[#fff] font-black  font-syne lg:text-[60px] sm:text-[40px] xs:text-[50px] text-[40px] lg:leading-[80px] mt-2">
-                  Full service studio for both startups and established
-                  businesses
+                <h1 className="text-[#fff] font-black  font-syne lg:text-[50px] sm:text-[30px] xs:text-[20px] text-[40px] lg:leading-[40px] mt-2">
+                  We are inspired to reach even greater heights when our clients
+                  share project results with us.
                 </h1>
               </div>
-              {/* <div className="basis-2/6">
+            </div>
+          </div>
 
-              <p className="">Selected Cases</p>
+          <div className=" ">
+            <div className="black-gradientss flex items-center justify-center lg:flex-row flex-col-reverse">
+              <div className="lg:w-2/6 w-full">
+                <img src="/illustration.webp" alt="" className="" />
               </div>
-              <div className="basis-4/6">
-              <h1 className={`${styles.heroHeadText} text-white`}>
-                  Full service studio for both startups and established
-                  businesses
-                </h1> */}
-              {/* </div> */}
+
+              <div className="">
+                <div className="">
+                <div className="">
+                  <p className="lg:text-[56px] text-[30px] leading-[45px] lg:leading-[84px]">$16M+</p>
+                  <p className="text-[18px] leading-[27px]">
+                    Over $16m in investments raised by our clients
+                  </p>
+                </div>
+
+                <div className="">
+                <p className="lg:text-[56px] text-[30px] leading-[45px] lg:leading-[84px]">4.9</p>
+                <p className="text-[18px] leading-[27px]">
+                    Average rating of Studio clients’ apps on the App Store
+                  </p>
+                </div>   
+                </div>
+               <div className="">
+                <div className="">
+                <p className="lg:text-[56px] text-[30px] leading-[45px] lg:leading-[84px]">15.3</p>
+                <p className="text-[18px] leading-[27px]">
+                    Hours/month one specialist allocates to studying new trends
+                    and technologies. Proved by our Hubstaff analytics :)
+                  </p>
+                </div>
+              
+                <div className="">
+                <p className="lg:text-[56px] text-[30px] leading-[45px] lg:leading-[84px]">5.0</p>
+                <p className="text-[18px] leading-[27px]">
+                    Rating on the most reputable review platform, Clutch
+                  </p>
+                </div>
+               </div>
+
+                
+
+              </div>
             </div>
           </div>
           {/* <Hero /> */}
         </div>
-         {/* <About /> */}
-       {/* <Experience />
+        {/* <About /> */}
+        {/* <Experience />
         <Tech />
         <Works /> */}
         {/* <Feedbacks /> */}
