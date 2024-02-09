@@ -43,7 +43,7 @@ const App = () => {
   }, []);
   return (
     <BrowserRouter>
-      <div className="relative z-0 black-gradient">
+      <div className="relative app z-0 black-gradient">
         {/* Your app content */}
         <div
           className="custom-cursor"
