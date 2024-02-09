@@ -46,6 +46,12 @@ body {
   font-weight: 600;
   src: local('Inter Regular'), local('Inter-Regular'), url('/font/inter/Inter-Regular.ttf') format('ttf');
 }
+
+s{
+  overflow-x: hidden;
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -53,6 +59,7 @@ body {
   font-family: "Syne", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
+  /* overflow-x: hidden; */
 }
 arrow-btn span::after, .arrow-btn span::before{
   content: "";
@@ -129,6 +136,15 @@ img {
 }
 .orange-background {
     background-color: #F2751A;
+ backface-visibility: visible;
+background-attachment: fixed;
+    color: rgb(31, 33, 34);
+    background-image: url(https://phenomenonstudio.com/wp-content/webp-express/webp-images/themes/phenomenon/img/bg.png.webp);
+}
+.lemon-background {
+    background-color: rgb(186, 172, 42);
+ backface-visibility: visible;
+background-attachment: fixed;
     color: rgb(31, 33, 34);
     background-image: url(https://phenomenonstudio.com/wp-content/webp-express/webp-images/themes/phenomenon/img/bg.png.webp);
 }
@@ -282,6 +298,23 @@ img {
   transform: translateZ(0);
 }
 
+.footer .wrap {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1110px){
+.wrap {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.wrap {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1330px;
+  padding: 0 15px;
+}
+}
 @keyframes mulShdSpin {
   0%,
   100% {

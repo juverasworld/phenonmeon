@@ -7,58 +7,35 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-    >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-      >
-        <img
-          src={icon}
-          alt={title}
-          className='w-16 h-16 object-contain'
-        /> 
 
-        <h3 className='text-white font-sans text-[20px] font-bold text-center'>
-          {title}
-        </h3>
-      </div>
-    </motion.div>
-  </Tilt>
-);
 
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+      <motion.div variants={textVariant()} className=" lg:mt-[-170px] mt-10">
+      <div className="video-wrap">
+              <video
+                width="1300"
+                height="730"
+                data-normal="https://phenomenonstudio.com/wp-content/uploads/2022/09/Reel_New_Preview_low1.mp4"
+                data-retina="https://phenomenonstudio.com/wp-content/uploads/2022/09/Reel_New_Preview_low1.mp4"
+                data-small="https://phenomenonstudio.com/wp-content/uploads/2022/09/Reel_New_Preview_mobile.mp4"
+                className="view fadein delay0-7 active viewed"
+                // id="main-video"
+                muted
+                controls
+                loop
+                autoPlay
+                playsInline
+                src="https://phenomenonstudio.com/wp-content/uploads/2022/09/Reel_New_Preview_low1.mp4"
+                type='video/mp4; codecs="hvc1"'
+                data-stop="true"
+                style={{ visibility: "visible" }}
+              ></video>
+            </div>
+          
       </motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-        I'm a skilled frontend developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Nextjs, tailwindCSS, Bootstrap and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
-      </motion.p>
-
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
     </>
   );
 };
